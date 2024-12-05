@@ -6,32 +6,40 @@ class CalculatorTest {
 
     @Test
     void add() {
-        Calculator calc = new Calculator();
-        assertEquals(3,calc.add(1,2));
+        Calculator calculator = new Calculator();
+        assertEquals(8,calculator.add(5,3));
+        assertEquals(-1,calculator.add(-2,1));
+        assertEquals(3,calculator.add(2,1));
+
     }
 
     @Test
     void dif() {
-        Calculator calc = new Calculator();
-        assertEquals(3,calc.dif(5,2));
-        assertEquals(0,calc.dif(5,5));
+        Calculator calculator = new Calculator();
+        assertEquals(9,calculator.dif(11,2));
+        assertEquals(4,calculator.dif(8,4));
+        assertEquals(3,calculator.dif(4,1));
     }
 
     @Test
     void div() {
-        Calculator calc = new Calculator();
-        assertEquals(5,calc.div(10,2));
+        Calculator calculator = new Calculator();
+        assertEquals(4,calculator.div(8,2));
+        assertEquals(1,calculator.div(7,7));
+        assertEquals(9,calculator.div(81,9));
     }
 
     @Test
     void times() {
-        Calculator calc = new Calculator();
-        assertEquals(10,calc.times(5,2));
+        Calculator calculator = new Calculator();
+        assertEquals(18,calculator.times(9,2));
+        assertEquals(49,calculator.times(7,7));
+        assertEquals(42,calculator.times(7,6));
     }
 
     @Test
     void solver() {
-        Calculator calc = new Calculator();
-        assertEquals(10, calc.solver(4, 6,2));
+        Calculator calculator = new Calculator();
+        assertEquals(36,calculator.solver(5,4,10,2));
     }
 }
