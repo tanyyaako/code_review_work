@@ -1,5 +1,4 @@
 public class Calculator {
-
     /** * Adds two integers.
      * @param a the first integer * @param b the second integer
      * @return the sum of a and b */

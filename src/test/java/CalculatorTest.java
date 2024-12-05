@@ -10,6 +10,7 @@ class CalculatorTest {
         assertEquals(8,calculator.add(5,3));
         assertEquals(-1,calculator.add(-2,1));
         assertEquals(3,calculator.add(2,1));
+
     }
 
     @Test
